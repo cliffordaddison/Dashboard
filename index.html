@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!--  MATERIAL ICONS CDN  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!--  GOOGLE FONTS (POPPINS)  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--  STYLESHEET  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--======== START OF NAVBAR ========-->
+    <nav>
+        <div class="container">
+            <img class="logo" src="./images/scanport_logo.png">
+            <div class="search-bar">
+                <span class="material-symbols-sharp">search</span>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="profile-area">
+                <div class="theme-btn">
+                    <span class="material-symbols-sharp active">light_mode</span>
+                    <span class="material-symbols-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/clifford.png">
+                    </div>
+                    <h5>Clifford Addison</h5>
+                    <span class="material-symbols-sharp">expand_more</span>
+                </div>
+                <button id="menu-btn">
+                    <span class="material-symbols-sharp">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!--======== END OF NAVBAR ========-->
+
+    <!--======== START OF MAIN PAGE ========-->
+    <main>
+        <aside>
+            <button id="close-btn">
+                <span class="material-symbols-sharp">close</span>
+            </button>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-symbols-sharp">dashboard</span>
+                    <h4>Dashboard</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">data_loss_prevention</span>
+                    <h4>Drivers' Data</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">quick_reference</span>
+                    <h4>Scanners Report</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">task</span>
+                    <h4>Intrusive</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">health_and_safety</span>
+                    <h4>HSSE</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">construction</span>
+                    <h4>Maintenance</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">diversity_3</span>
+                    <h4>Human Resource</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">support_agent</span>
+                    <h4>Customer Service</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">pie_chart</span>
+                    <h4>Analytics</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">help_center</span>
+                    <h4>Help Center</h4>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">settings</span>
+                    <h4>Settings</h4>
+                </a>
+            </div>
+            <!-- END OF SIDEBAR -->
+
+            <div class="updates">
+                <span class="material-symbols-sharp">update</span>
+                <h4>Subscribe for More Updates</h4>
+                <small>CliffDevs &copy;</small>
+                <small>2023 Dashboard Development.</small>
+            </div>
+
+        </aside>
+        <!-- END OF ASIDE -->
+        <section class="middle">
+            <div class="header">
+                <h1>Overview of Operations</h1>
+                <div class="date">
+                    <div class="start">
+                        <p>Start: </p>
+                        <input type="date">
+                    </div>
+                    <div class="end">
+                        <p>End: </p>
+                        <input type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="top chart">
+                    <img src="./images/intrusive.png">
+                </div>
+                <div class="top chart">
+                    <img src="./images/import.png">
+                </div>
+                <div class="top chart">
+                    <img src="./images/export.png">
+                </div>
+            </div>
+            <hr>
+            <div class="cards">
+                <div class="top chart card">
+                    <img src="./images/staff.png">
+                </div>
+                <div class="top chart card">
+                    <img src="./images/drivers.png">
+                </div>
+                <div class="top chart card">
+                    <img src="./images/agents.png">
+                </div>
+            </div>
+        </section>
+        <!-- END OF MIDDLE -->
+        <section class="right">
+            
+        </section>
+        <!-- END OF MIDDLE -->
+    </main>
+    <!--======== END OF MAIN PAGE ========-->
+    <script src="./main.js"></script>
+</body>
+</html>
