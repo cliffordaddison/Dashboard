@@ -1,0 +1,34 @@
+GLIDE-LIKE vs ORIGINAL GLIDE MODEL COMPARISON
+============================================================
+
+DATASET INFORMATION:
+  - Total samples used: 8390
+  - Labels: inside, outside, drink, food, menu
+  - Balanced sampling based on smallest class
+  - Image size: 64x64
+
+TRAINING CONFIGURATION:
+  - Epochs: 25
+  - Batch Size: 4
+  - Learning Rate: 1e-05
+  - Optimizer: AdamW with Cosine Annealing
+
+GLIDE-LIKE MODEL (Built from Scratch):
+  - Architecture: Custom U-Net with text conditioning
+  - Text Encoder: Simple transformer-based encoder
+  - Diffusion: DDPM-style process
+  - Inception Score: 2.4025
+  - FID Score: 978.8110
+  - Training Loss: 0.030633
+
+ORIGINAL GLIDE MODEL (Pre-trained):
+  - Architecture: OpenAI's GLIDE implementation
+  - Text Encoder: CLIP-based encoder
+  - Diffusion: Advanced guided diffusion
+  - Inception Score: 3.4624
+  - FID Score: 1007.9089
+  - Pre-trained: Yes (on large-scale dataset)
+
+COMPARISON SUMMARY:
+  - IS Score Comparison: Original GLIDE wins (3.4624 vs 2.4025)
+  - FID Score Comparison: GLIDE-like wins (lower is better: 978.8110 vs 1007.9089)
